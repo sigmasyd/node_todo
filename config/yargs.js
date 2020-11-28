@@ -16,6 +16,7 @@ const extra_param = {
 const argv = require('yargs')
   .command('crear','Crear un elemento por hacer',opts)
   .command('actualizar','Actualiza el estado completo de una tarea',{...opts,...extra_param})
+  .command('borrar','Borra tarea',opts)
   .help()
   .argv;
 
